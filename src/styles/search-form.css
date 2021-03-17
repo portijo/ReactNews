@@ -7,4 +7,11 @@
 .search-input {
   padding: 10px;
   margin-right: 10px;
+  border-radius: 10px;
+  width: 20%;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+}
+
+.search-submit {
+  border-radius: 10px;
 }
