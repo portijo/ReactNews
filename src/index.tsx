@@ -5,7 +5,9 @@ import reportWebVitals from './reportWebVitals';
 
 import './styles/index.css';
 import './styles/app.css';
-import './styles/article-card.css'
+import './styles/article-list.css';
+import './styles/search-form.css';
+import './styles/article-card.css';
 
 ReactDOM.render(
   <React.StrictMode>

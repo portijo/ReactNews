@@ -17,11 +17,11 @@ const ArticleList: FC<Props> = ({ articles }): ReactElement => {
   }
 
   return (
-    <>
+    <div className="article-list">
       {articles.map((article, idx) => (
         <ArticleCard key={`article-cart-${idx}`} article={article} />
       ))}
-    </>
+    </div>
   );
 };
 
