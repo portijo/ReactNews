@@ -11,7 +11,9 @@ interface Props {
  * @returns React Element
  */
 const ArticleCard: FC<Props> = ({ article }): ReactElement => {
-  return <div></div>;
+  return <div className="card">
+    {article.author}
+  </div>;
 };
 
 export { ArticleCard };
