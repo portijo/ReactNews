@@ -1,18 +1,4 @@
-interface Source {
-  id?: null | string;
-  name: string;
-}
-
-interface ArticleGroup {
-  author: string;
-  source: Source;
-  content: string;
-  description: string;
-  publishedAt: string;
-  title: string;
-  url: string;
-  urlToImage: string;
-}
+import { Article } from '.';
 
 /**
  * interface structure of expected API response
@@ -21,7 +7,7 @@ interface ArticleGroup {
  * @param totalResults The total number of results available for your request.
  */
 export interface ApiResponse {
-  articles: Array<ArticleGroup>;
+  articles: Array<Article>;
   status: string;
   totalResults: number;
 }

@@ -6,7 +6,7 @@ interface Props {
 
 /**
  * functional component with a text and submit input
- * @param searchTopic function that searches for topic in API 
+ * @param searchTopic function that searches for topic in API
  * @returns ReactElement
  */
 const Search: FC<Props> = ({ searchTopic }): ReactElement => {
@@ -34,4 +34,4 @@ const Search: FC<Props> = ({ searchTopic }): ReactElement => {
   );
 };
 
-export default Search;
+export { Search };
