@@ -27,8 +27,7 @@ const Search: FC<Props> = ({ searchTopic }): ReactElement => {
 
   return (
     <form className="search-form">
-      <label htmlFor="search-input">Search</label>
-      <input type="topic" name="search-input" value={topic} onChange={setTextValue} />
+      <input className="search-input" type="topic" name="search-input" value={topic} onChange={setTextValue} placeholder="Search Topic..." />
       <input type="submit" value="Search News" onClick={queryValue} />
     </form>
   );

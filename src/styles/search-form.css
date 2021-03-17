@@ -3,3 +3,8 @@
   margin: 50px 0px;
   justify-content: center;
 }
+
+.search-input {
+  padding: 10px;
+  margin-right: 10px;
+}
