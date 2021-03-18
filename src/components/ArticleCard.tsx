@@ -6,7 +6,7 @@ interface Props {
 }
 
 /**
- * Article card information
+ * Article related information put into a card.
  * @param article article object from api response
  * @returns React Element
  */
@@ -18,9 +18,7 @@ const ArticleCard: FC<Props> = ({ article }): ReactElement => {
           <img src={article.urlToImage} alt="article" />
         </div>
         <div className="card-title">{article.title}</div>
-        {/* <div className="card-description">{article.description}</div> */}
       </div>
-
       <div>
         <div className="card-link">
           <a href={article.url} target="_blank" rel="noopener noreferrer">

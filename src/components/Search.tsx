@@ -5,8 +5,8 @@ interface Props {
 }
 
 /**
- * functional component with a text and submit input
- * @param searchTopic function that searches for topic in API
+ * Search component with a text and submit input
+ * @param searchTopic function that searches for topic in API.
  * @returns ReactElement
  */
 const Search: FC<Props> = ({ searchTopic }): ReactElement => {
@@ -18,7 +18,7 @@ const Search: FC<Props> = ({ searchTopic }): ReactElement => {
   };
 
   /**
-   * This function sets text value to state
+   * This function sets topic (text) value to state.
    * @param e HTML input change event type
    */
   const setTextValue = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -27,7 +27,14 @@ const Search: FC<Props> = ({ searchTopic }): ReactElement => {
 
   return (
     <form className="search-form">
-      <input className="search-input" type="topic" name="search-input" value={topic} onChange={setTextValue} placeholder="Search Topic..." />
+      <input
+        className="search-input"
+        type="topic"
+        name="search-input"
+        value={topic}
+        onChange={setTextValue}
+        placeholder="Search Topic..."
+      />
       <input className="search-submit" type="submit" value="Search News" onClick={queryValue} />
     </form>
   );

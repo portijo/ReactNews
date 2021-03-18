@@ -1,7 +1,8 @@
 import { Article } from '.';
 
 /**
- * interface structure of expected API response
+ * Api response
+ *
  * @param articles list of articles
  * @param status API status response
  * @param totalResults The total number of results available for your request.

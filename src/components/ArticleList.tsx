@@ -3,22 +3,22 @@ import { Article } from '../interfaces';
 import { ArticleCard } from '.';
 
 interface Props {
-  articles: Article[] | undefined;
+  articles: Article[] | [] | undefined;
 }
 
 /**
- * Article list container component
+ * Article list container component, holds an array of ArticleCard component.
  * @param articles article group array from api response
  * @returns React Element
  */
 const ArticleList: FC<Props> = ({ articles }): ReactElement => {
-  if (!articles) {
-    return <div>Empty Result</div>;
+  if (!articles || articles.length === 0) {
+    return <div>Empty...</div>;
   }
 
   return (
     <div className="article-list">
-      {articles.map((article, idx) => (
+      {articles.map((article: Article, idx: number) => (
         <ArticleCard key={`article-cart-${idx}`} article={article} />
       ))}
     </div>
